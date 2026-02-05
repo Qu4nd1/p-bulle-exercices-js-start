@@ -2,9 +2,11 @@
 // This is only a SKELETON file for the 'Space Age' exercise. It's been provided as a
 // convenience to get you started writing code faster.
 //
-const planet="";
-const ageSeconds = 1000000000;
-export const age = (planet, ageSeconds) => {
+/** 
+* @param {const} planet
+* @param {const} seconds
+*/
+export const age = (planet, seconds) => {
   const planets = {
     mercury: 0.2408467,
     venus: 0.61519726,
@@ -17,7 +19,7 @@ export const age = (planet, ageSeconds) => {
   };
   
   const yearToSecond = 31557600;
-  const yearsOnEarth = ageSeconds / yearToSecond;
+  const yearsOnEarth = seconds / yearToSecond;
   
   const scale = planets[planet.toLowerCase()];
   
